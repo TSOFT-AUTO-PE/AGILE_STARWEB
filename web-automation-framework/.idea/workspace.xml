@@ -191,6 +191,11 @@
           <line>1036</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/steps/reclamo/steps_registroReclamo_Movil.java</url>
+          <line>1973</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

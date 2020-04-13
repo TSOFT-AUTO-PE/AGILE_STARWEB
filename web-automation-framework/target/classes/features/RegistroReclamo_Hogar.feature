@@ -2040,6 +2040,303 @@ Feature: Registro Reclamo Modulo Hogar
       |           1 |
 
 
+  @Test_Hogar_Trio_Otros_Ofrecimiento_Condiciones
+  Scenario Outline: Registro Reclamo Hogar Trío - Otros - Ofrecimiento - Condiciones
+
+    Given ingreso a la URL "<caso_prueba>"
+    And Selecciono la opción HOGAR
+    And Selecciono la opcion TRIO
+    When Ingreso el NÚMERO DE TELEFONO "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO
+    And Selecciono el Tipo de Documento DNI
+    When Ingreso el NÚMERO DE DOCUMENTO "<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA "<caso_prueba>"
+    And Selecciono la opción COMENCEMOS
+    And Selecciono la opcion NO
+    And Selecciono la opción ¿Incumplimos algun ofrecimiento?
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Condiciones Contractuales/Derechos Reconocidos Normativa/Reuso de Equipo en Baja
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO
+    And Selecciono el MES
+    And Selecciono la opción ANIO RECIBO RECLAMO
+    And Selecciono la ANIO
+    And Selecciono la opción NÚMERO DE RECIBO
+    When Ingreso el NÚMERO DE RECIBO "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el NOMBRE "<caso_prueba>"
+    When INgreso el APELLIDO "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO
+    And Selecciono el USUARIO
+    When Ingreso el NUMERO DE CONTACTO "<caso_prueba>"
+    When Ingreso el CORREO "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO "<caso_prueba>"
+    And Selecciono DEPARTAMENTO
+    And Selecciono DEPARTAMENTO1
+    And Selecciono PROVINCIA
+    And Selecciono PROVINCIA1
+    And Selecciono DISTRITO
+    And Selecciono DISTRITO1
+    When Ingreso la DIRECCION "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL
+    And Selecciono DEPARTAMENTO FINAL1
+    And Selecciono la opción ENVIAR
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Hogar_Trio_Otros_InstalReinsta_Instalacion_Nueva
+  Scenario Outline: Registro Reclamo Hogar Trío - Otros - Instalación Reinstalacion - Nueva
+
+    Given ingreso a la URL "<caso_prueba>"
+    And Selecciono la opción HOGAR
+    And Selecciono la opcion TRIO
+    When Ingreso el NÚMERO DE TELEFONO "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO
+    And Selecciono el Tipo de Documento DNI
+    When Ingreso el NÚMERO DE DOCUMENTO "<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA "<caso_prueba>"
+    And Selecciono la opción COMENCEMOS
+    And Selecciono la opcion NO
+    And Selecciono la opción Instalacion o Reinstalación
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Han pasado siete dias y aún no instalan mi servicio
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Nueva Instalación
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO
+    And Selecciono el MES
+    And Selecciono la opción ANIO RECIBO RECLAMO
+    And Selecciono la ANIO
+    And Selecciono la opción NÚMERO DE RECIBO
+    When Ingreso el NÚMERO DE RECIBO "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el NOMBRE "<caso_prueba>"
+    When INgreso el APELLIDO "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO
+    And Selecciono el USUARIO
+    When Ingreso el NUMERO DE CONTACTO "<caso_prueba>"
+    When Ingreso el CORREO "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO "<caso_prueba>"
+    And Selecciono DEPARTAMENTO
+    And Selecciono DEPARTAMENTO1
+    And Selecciono PROVINCIA
+    And Selecciono PROVINCIA1
+    And Selecciono DISTRITO
+    And Selecciono DISTRITO1
+    When Ingreso la DIRECCION "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL
+    And Selecciono DEPARTAMENTO FINAL1
+    And Selecciono la opción ENVIAR
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Hogar_Trio_Otros_InstalReinsta_Reinstalacion
+  Scenario Outline: Registro Reclamo Hogar Trío - Otros  - Instalación Reinstalacion - Reinstalacion
+
+    Given ingreso a la URL "<caso_prueba>"
+    And Selecciono la opción HOGAR
+    And Selecciono la opcion TRIO
+    When Ingreso el NÚMERO DE TELEFONO "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO
+    And Selecciono el Tipo de Documento DNI
+    When Ingreso el NÚMERO DE DOCUMENTO "<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA "<caso_prueba>"
+    And Selecciono la opción COMENCEMOS
+    And Selecciono la opcion NO
+    And Selecciono la opción Instalacion o Reinstalación
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Han pasado siete dias y aún no instalan mi servicio
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Reinstalación
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO
+    And Selecciono el MES
+    And Selecciono la opción ANIO RECIBO RECLAMO
+    And Selecciono la ANIO
+    And Selecciono la opción NÚMERO DE RECIBO
+    When Ingreso el NÚMERO DE RECIBO "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el NOMBRE "<caso_prueba>"
+    When INgreso el APELLIDO "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO
+    And Selecciono el USUARIO
+    When Ingreso el NUMERO DE CONTACTO "<caso_prueba>"
+    When Ingreso el CORREO "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO "<caso_prueba>"
+    And Selecciono DEPARTAMENTO
+    And Selecciono DEPARTAMENTO1
+    And Selecciono PROVINCIA
+    And Selecciono PROVINCIA1
+    And Selecciono DISTRITO
+    And Selecciono DISTRITO1
+    When Ingreso la DIRECCION "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL
+    And Selecciono DEPARTAMENTO FINAL1
+    And Selecciono la opción ENVIAR
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Hogar_Trio_Otros_InstalReinsta_Migracion
+  Scenario Outline: Registro Reclamo Hogar Trío - Otros - Instalación Reinstalacion - Migracion
+
+    Given ingreso a la URL "<caso_prueba>"
+    And Selecciono la opción HOGAR
+    And Selecciono la opcion TRIO
+    When Ingreso el NÚMERO DE TELEFONO "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO
+    And Selecciono el Tipo de Documento DNI
+    When Ingreso el NÚMERO DE DOCUMENTO "<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA "<caso_prueba>"
+    And Selecciono la opción COMENCEMOS
+    And Selecciono la opcion NO
+    And Selecciono la opción Instalacion o Reinstalación
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Han pasado siete dias y aún no instalan mi servicio
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Migracion
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO
+    And Selecciono el MES
+    And Selecciono la opción ANIO RECIBO RECLAMO
+    And Selecciono la ANIO
+    And Selecciono la opción NÚMERO DE RECIBO
+    When Ingreso el NÚMERO DE RECIBO "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el NOMBRE "<caso_prueba>"
+    When INgreso el APELLIDO "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO
+    And Selecciono el USUARIO
+    When Ingreso el NUMERO DE CONTACTO "<caso_prueba>"
+    When Ingreso el CORREO "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO "<caso_prueba>"
+    And Selecciono DEPARTAMENTO
+    And Selecciono DEPARTAMENTO1
+    And Selecciono PROVINCIA
+    And Selecciono PROVINCIA1
+    And Selecciono DISTRITO
+    And Selecciono DISTRITO1
+    When Ingreso la DIRECCION "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL
+    And Selecciono DEPARTAMENTO FINAL1
+    And Selecciono la opción ENVIAR
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Hogar_Trio_Otros_Susp_Baja_Suspension
+  Scenario Outline: Registro Reclamo Hogar Trío - Otros - Suspencion Baja - Suspension
+
+    Given ingreso a la URL "<caso_prueba>"
+    And Selecciono la opción HOGAR
+    And Selecciono la opcion TRIO
+    When Ingreso el NÚMERO DE TELEFONO "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO
+    And Selecciono el Tipo de Documento DNI
+    When Ingreso el NÚMERO DE DOCUMENTO "<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA "<caso_prueba>"
+    And Selecciono la opción COMENCEMOS
+    And Selecciono la opcion NO
+    And Selecciono la opción Suspensión / Baja Final
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Solicite suspender mi servicio y sigue activo
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO
+    And Selecciono el MES
+    And Selecciono la opción ANIO RECIBO RECLAMO
+    And Selecciono la ANIO
+    And Selecciono la opción NÚMERO DE RECIBO
+    When Ingreso el NÚMERO DE RECIBO "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el NOMBRE "<caso_prueba>"
+    When INgreso el APELLIDO "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO
+    And Selecciono el USUARIO
+    When Ingreso el NUMERO DE CONTACTO "<caso_prueba>"
+    When Ingreso el CORREO "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO "<caso_prueba>"
+    And Selecciono DEPARTAMENTO
+    And Selecciono DEPARTAMENTO1
+    And Selecciono PROVINCIA
+    And Selecciono PROVINCIA1
+    And Selecciono DISTRITO
+    And Selecciono DISTRITO1
+    When Ingreso la DIRECCION "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL
+    And Selecciono DEPARTAMENTO FINAL1
+    And Selecciono la opción ENVIAR
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Hogar_Trio_Otros_Susp_Baja_Baja
+  Scenario Outline: Registro Reclamo Hogar Trío - Otros - Suspencion Baja - Baja
+
+    Given ingreso a la URL "<caso_prueba>"
+    And Selecciono la opción HOGAR
+    And Selecciono la opcion TRIO
+    When Ingreso el NÚMERO DE TELEFONO "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO
+    And Selecciono el Tipo de Documento DNI
+    When Ingreso el NÚMERO DE DOCUMENTO "<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA "<caso_prueba>"
+    And Selecciono la opción COMENCEMOS
+    And Selecciono la opcion NO
+    And Selecciono la opción Suspensión / Baja Final
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción Solicite cortar mi servicio y sigue activo
+    And Selecciono la opcion CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO
+    And Selecciono el MES
+    And Selecciono la opción ANIO RECIBO RECLAMO
+    And Selecciono la ANIO
+    And Selecciono la opción NÚMERO DE RECIBO
+    When Ingreso el NÚMERO DE RECIBO "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL "<caso_prueba>"
+    And Selecciono la opcion CONTINUAR
+    When Ingreso el NOMBRE "<caso_prueba>"
+    When INgreso el APELLIDO "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO
+    And Selecciono el USUARIO
+    When Ingreso el NUMERO DE CONTACTO "<caso_prueba>"
+    When Ingreso el CORREO "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO "<caso_prueba>"
+    And Selecciono DEPARTAMENTO
+    And Selecciono DEPARTAMENTO1
+    And Selecciono PROVINCIA
+    And Selecciono PROVINCIA1
+    And Selecciono DISTRITO
+    And Selecciono DISTRITO1
+    When Ingreso la DIRECCION "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL
+    And Selecciono DEPARTAMENTO FINAL1
+    And Selecciono la opción ENVIAR
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
   @Test_Hogar_Trio_Apelacion
   Scenario Outline: Registro Reclamo Hogar Trío - Apelación
 

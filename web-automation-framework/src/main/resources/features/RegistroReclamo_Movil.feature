@@ -1,7 +1,7 @@
 Feature: Registro Reclamo Modulo Movil
 
-  @Test_Movil_Prepago
-  Scenario Outline: Registro Reclamo Movil Prepago
+  @Test_Movil_Prepago_Penalidad
+  Scenario Outline: Registro Reclamo Movil Prepago Penalidad
     Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
     And Selecciono la opcion MOVIL
     And Ingreso el NUMERO CELULAR "<caso_prueba>"
@@ -12,6 +12,657 @@ Feature: Registro Reclamo Modulo Movil
     And Selecciono la opción COMENCEMOS MOVIL
     And Selecciono el boton NO
     And Selecciono la opción PENALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Contrato
+  Scenario Outline: Registro Reclamo Movil Prepago Contrato
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Desconocimiento de contrato
+    And Selecciono la opción CONTINUAR
+    And Selecciona la opción Nunca firmé un contrato con Movistar
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Prepago_Titularidad
+  Scenario Outline: Registro Reclamo Movil Prepago Cambio de Titularidad
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Cambio de titularidad Prepago
+    And Selecciono la opción CONTINUAR
+    And Selecciona la opción Nunca acepté la titularidad de un servicio móvil
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Camb_Equipo
+  Scenario Outline: Registro Reclamo Movil Prepago Cambio de equipo
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Cambio de equipo Prepago
+    And Selecciono la opción CONTINUAR
+    And Selecciona la opción Me facturan un cambio de equipo/Simcard que no solicité
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Equipo_Cuota_Financ
+  Scenario Outline: Registro Reclamo Movil Prepago Equipo Cuota Financiamiento
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Equipo
+    And Selecciono la opción CONTINUAR
+    And Selecciona la opción La cuota de financiamiento distinta a lo acordado
+    And Selecciono la opción CONTINUAR
+    When Ingreso Importe ofrecido "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Equipo_Facturan_Importe
+  Scenario Outline: Registro Reclamo Movil Prepago Equipo Facturan Importe
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Equipo
+    And Selecciono la opción CONTINUAR
+    And Selecciona la opción Me facturan un importe mayor a lo afrecido
+    And Selecciono la opción CONTINUAR
+    When Ingreso Importe ofrecido "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Servicios_especiales
+  Scenario Outline: Registro Reclamo Movil Prepago Servicios Especiales
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Servicios adicionales / memberias
+    And Selecciono la opción CONTINUAR
+    And Selecciona la opción No solicité servcios espciales a mi plan ni membresías
+    And Selecciono la opción CONTINUAR
+    When Ingreso el comentario especifique plan "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Reconexion
+  Scenario Outline: Registro Reclamo Movil Prepago Reconexion
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Reconexion
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Roaming
+  Scenario Outline: Registro Reclamo Movil Prepago Roaming
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Roaming
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Consumos_Adicionales_VOZ
+  Scenario Outline: Registro Reclamo Movil Prepago Consumos Adicionales VOZ
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Consumos Adicionales
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción Me facturan consumos adicionales de voz y/o mensajes y no los consumí
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Consumos_Adicionales_DATOS
+  Scenario Outline: Registro Reclamo Movil Prepago Consumos Adicionales DATOS
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Consumos Adicionales
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción Me facturan consumos de datos adicionales y no los consumí
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Paquetes_No_Solicitado
+  Scenario Outline: Registro Reclamo Movil Prepago Paquetes No Solicitado
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Paquetes: Datos, voz y/o SMS
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción Me facturan un paquete que no solicité
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Plan_Excedente
+  Scenario Outline: Registro Reclamo Movil Prepago Plan Excedente
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Plan mensual/cargo Fijo
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción No reconozco el excedente de mi cargo Fijo
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Plan_Promoción
+  Scenario Outline: Registro Reclamo Movil Prepago Plan Promoción
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Plan mensual/cargo Fijo
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción No cumplieron con promocion ofrecida
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO Especifique los beneficios "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Prepago_Plan_Beneficios
+  Scenario Outline: Registro Reclamo Movil Prepago Plan Beneficios
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opción Plan mensual/cargo Fijo
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción No cumplieron con los beneficios ofrecidos de mi plan
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO Especifique los beneficios "<caso_prueba>"
     And Selecciono la opción CONTINUAR
     And Selecciono la opción MES RECIBO RECLAMO MOVIL
     And Selecciono el MES MOVIL
@@ -92,19 +743,19 @@ Feature: Registro Reclamo Modulo Movil
       |           1 |
 
 
-  @Test_Movil_Prepago_Queja
-  Scenario Outline: Registro Reclamo Movil Prepago Queja
+  @Test_Movil_Prepago_QUEJA_TIEMPO_EXCEDIDO
+  Scenario Outline: Registro Reclamo Movil Postpago QUEJA TIEMPO EXCEDIDO
 
     Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
     And Selecciono la opcion MOVIL
-    And Ingreso el NUMERO CELULAR "<caso_prueba>"
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
     And Selecciono TIPO DE DOCUMENTO MOVIL
     And Selecciono el Tipo de Documento DNI MOVIL
-    When Ingreso el NÚMERO DE DOCUMENTO MOVIL"<caso_prueba>"
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
     When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
     And Selecciono la opción COMENCEMOS MOVIL
-    And Selecciono la opcion SI
-    And Selecciono la opcion QUEJAS M
+    And Selecciono la opcion SI P
+    And Selecciono la opcion Nos excedimos en el plazo de respuesta de tu reclamo
     And Selecciono la opción CONTINUAR
     When Ingreso el NUMERO DE TELEFONO CELULAR M "<caso_prueba>"
     And Selecciono el boton ARCHIVO M "<caso_prueba>"
@@ -129,6 +780,90 @@ Feature: Registro Reclamo Modulo Movil
     And Selecciono DEPARTAMENTO FINAL1 M
     And Selecciono la opción ENVIAR M
 
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Prepago_QUEJA_RECLAMO_NEGADO
+  Scenario Outline: Registro Reclamo Movil Postpago QUEJA RECLAMO NEGADO
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono la opcion SI P
+    And Selecciono la opcion EN ALGUN CANAL TE HAN NEGADO EL REGISTRO DE TU RECLAMO
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NUMERO DE TELEFONO CELULAR M "<caso_prueba>"
+    And Selecciono el boton ARCHIVO M "<caso_prueba>"
+    When Ingreso los DATOS DE RESOLUCION M "<caso_prueba>"
+    When Ingreso RAZONES DE LA QUEJA M "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+
+  @Test_Movil_Prepago_QUEJA_RESOLUCION_RECLAMO
+  Scenario Outline: Registro Reclamo Movil Postpago QUEJA
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono la opcion SI P
+    And Selecciono la opcion RESOLUCION_RECLAMO
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NUMERO DE TELEFONO CELULAR M "<caso_prueba>"
+    And Selecciono el boton ARCHIVO M "<caso_prueba>"
+    When Ingreso los DATOS DE RESOLUCION M "<caso_prueba>"
+    When Ingreso RAZONES DE LA QUEJA M "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
 
     Examples:
       | caso_prueba |
@@ -2250,9 +2985,792 @@ Feature: Registro Reclamo Modulo Movil
       | caso_prueba |
       |           1 |
 
+  @Test_Movil_Postpago_CALIDAD_PROBLEMAS_SERVICIO
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD PROBLEMAS SERVICIO
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion PROBLEMAS CON EL SERVICIO
+    And Selecciono la opción CONTINUAR
+    When Especifica el PROBLEMA "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_PROBLEMAS_ROAMING
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD PROBLEMAS ROAMING
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion TENGO INCONVENIENTES CON EL ROAMING
+    And Selecciono la opción CONTINUAR
+    When Especifica el MENSAJE DE ERROR LUGAR "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_SMS_RECIBIR
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD SMS RECIBIR
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion MENSAJES DE TEXTO
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO RECIBIR SMS
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Postpago_CALIDAD_SMS_ENVIAR
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD SMS ENVIAR
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion MENSAJES DE TEXTO
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO ENVIAR SMS
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_DATOS_CEL
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD DATOS CELULAR
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO USAR LOS DATOS DE MI CELULAR
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_DATOS_BAM
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD DATOS BAM
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO USAR LOS DATOS DE MI INTERNET MOVIL BAM
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Postpago_CALIDAD_PAQUETE_ARMA_TU_PLAN
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD PAQUETE ARMA TU PLAN
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion CUENTO CON EL PAQUETE ARMA TU PLAN Y NO PUEDO CONSUMIRLO
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_CONSULTA_SALDO
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD CONSULTA SALDO
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO CONSULTAR MI SALDO ENVIANDO SMS A
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Postpago_CALIDAD_AFIL_SMS_PREMIUM
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD AFILIACION SMS PREMIUM
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO AFILIARME A LOS SMS PREMIUM
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_DESAFIL_SMS_PREMIUM
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD DESAFILIACION SMS PREMIUM
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO DESAFILIARME A LOS SMS PREMIUM
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_AFIL_SERVICIO_ESCUCHAME
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD AFILIACION SERVICIO ESCUCHAME
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO AFILIARME A SERVICIO ESCUCHAME
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_DESAFIL_SERVICIO_ESCUCHAME
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD DESAFILIACION SERVICIO ESCUCHAME
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO DESAFILIARME A SERVICIO ESCUCHAME
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_CALIDAD_PORBLEMAS_MPLAY
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD PROBLEMAS MOVISTAR PLAY
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion TENGO PROBLEMAS DE CALIDAD EN MI CELULAR CON MOVISTARPLAY
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
 
 
 
+  @Test_Movil_Postpago_CALIDAD_INGRESO_USSD
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD INGRESO USSD
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO INGRESAR AL USSD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+
+  @Test_Movil_Postpago_CALIDAD_COMPRA_RECARGA_VIRTUAL
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD COMPRA RECARGA VIRTUAL
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CALIDAD
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opcion NO PUEDO REALIZAR LA COMPRA DE UNA RECARGA VIRTUAL
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+  @Test_Movil_Postpago_CALIDAD_CONTRATACION
+  Scenario Outline: Registro Reclamo Movil Postago CALIDAD CONTRATACION
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono el boton NO
+    And Selecciono la opcion CONTRATACION NO SOLICITADA
+    And Selecciono la opción CONTINUAR
+    And Selecciono la opción MES RECIBO RECLAMO MOVIL
+    And Selecciono el MES MOVIL
+    And Selecciono la opción ANIO RECIBO RECLAMO MOVIL
+    And Selecciono la ANIO MOVIL
+    And Selecciono la opción NÚMERO DE RECIBO MOVIL
+    When Ingreso el NÚMERO DE RECIBO MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el COMENTARIO ADICIONAL MOVIL"<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+
+    Examples:
+      | caso_prueba |
+      |           1 |
 
 
 
@@ -2304,7 +3822,92 @@ Feature: Registro Reclamo Modulo Movil
 
 
 
-  @Test_Movil_Postpago_QUEJA
+  @Test_Movil_Postpago_QUEJA_TIEMPO_EXCEDIDO
+  Scenario Outline: Registro Reclamo Movil Postpago QUEJA TIEMPO EXCEDIDO
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono la opcion SI P
+    And Selecciono la opcion Nos excedimos en el plazo de respuesta de tu reclamo
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NUMERO DE TELEFONO CELULAR M "<caso_prueba>"
+    And Selecciono el boton ARCHIVO M "<caso_prueba>"
+    When Ingreso los DATOS DE RESOLUCION M "<caso_prueba>"
+    When Ingreso RAZONES DE LA QUEJA M "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+  @Test_Movil_Postpago_QUEJA_RECLAMO_NEGADO
+  Scenario Outline: Registro Reclamo Movil Postpago QUEJA RECLAMO NEGADO
+
+    Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
+    And Selecciono la opcion MOVIL
+    And Ingreso el NUMERO CELULAR P"<caso_prueba>"
+    And Selecciono TIPO DE DOCUMENTO MOVIL
+    And Selecciono el Tipo de Documento DNI MOVIL
+    When Ingreso el NÚMERO DE DOCUMENTO MOVIL P"<caso_prueba>"
+    When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
+    And Selecciono la opción COMENCEMOS MOVIL
+    And Selecciono la opcion SI P
+    And Selecciono la opcion EN ALGUN CANAL TE HAN NEGADO EL REGISTRO DE TU RECLAMO
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NUMERO DE TELEFONO CELULAR M "<caso_prueba>"
+    And Selecciono el boton ARCHIVO M "<caso_prueba>"
+    When Ingreso los DATOS DE RESOLUCION M "<caso_prueba>"
+    When Ingreso RAZONES DE LA QUEJA M "<caso_prueba>"
+    And Selecciono la opción CONTINUAR
+    When Ingreso el NOMBRE M "<caso_prueba>"
+    When INgreso el APELLIDO M "<caso_prueba>"
+    And Selecciono TIPO DE USUARIO M
+    And Selecciono el USUARIO M
+    When Ingreso el NUMERO DE CONTACTO M "<caso_prueba>"
+    When Ingreso el CORREO M "<caso_prueba>"
+    When Ingreso la CONFIRMACION DEL CORREO M "<caso_prueba>"
+    And Selecciono DEPARTAMENTO M
+    And Selecciono DEPARTAMENTO1 M
+    And Selecciono PROVINCIA M
+    And Selecciono PROVINCIA1 M
+    And Selecciono DISTRITO M
+    And Selecciono DISTRITO1 M
+    When Ingreso la DIRECCION M "<caso_prueba>"
+    And Selecciono DEPARTAMENTOFINAL M
+    And Selecciono DEPARTAMENTO FINAL1 M
+    And Selecciono la opción ENVIAR M
+
+    Examples:
+      | caso_prueba |
+      |           1 |
+
+
+
+  @Test_Movil_Postpago_QUEJA_RESOLUCION_RECLAMO
   Scenario Outline: Registro Reclamo Movil Postpago QUEJA
 
     Given Ingreso a la URL RECLAMOS MOVIL "<caso_prueba>"
@@ -2316,7 +3919,7 @@ Feature: Registro Reclamo Modulo Movil
     When Ingreso el NÚMERO DE CAPTCHA MOVIL"<caso_prueba>"
     And Selecciono la opción COMENCEMOS MOVIL
     And Selecciono la opcion SI P
-    And Selecciono la opcion QUEJAS M
+    And Selecciono la opcion RESOLUCION_RECLAMO
     And Selecciono la opción CONTINUAR
     When Ingreso el NUMERO DE TELEFONO CELULAR M "<caso_prueba>"
     And Selecciono el boton ARCHIVO M "<caso_prueba>"

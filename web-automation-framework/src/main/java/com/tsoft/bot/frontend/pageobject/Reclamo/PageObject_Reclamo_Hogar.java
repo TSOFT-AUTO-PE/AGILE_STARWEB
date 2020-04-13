@@ -74,6 +74,16 @@ public class PageObject_Reclamo_Hogar {
     public static By RDN_RETENCION = By.xpath("//*[@id=\"divGround\"]/label[2]");
     public static By RDN_CONDCONTR = By.xpath("//*[@id=\"divGround\"]/label[3]");
 
+    public static By RDN_INST_REINS = By.xpath("//*[@id=\"divGround\"]/label[5]");
+    public static By RDN_NO_INSTALAN = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_NUEVA = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_REINSTALACION = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RDN_SI_MIGRACION = By.xpath("//*[@id=\"divGround\"]/label[3]");
+
+    public static By RDN_SUSP_BAJA = By.xpath("//*[@id=\"divGround\"]/label[6]");
+    public static By RDN_SUSPENDER = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_CORTE = By.xpath("//*[@id=\"divGround\"]/label[2]");
+
     public static By RDN_Solicite  = By.xpath("//*[@id=\"divGround\"]/label[2]");
     public static By TXT_MONTO_OFRECIDO = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/input");
    // public static By BTN_CONTINUAR_MONTO = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[2]/input");

@@ -12,7 +12,8 @@ public class PageObject_Reclamo_Movil {
     public static By TXT_CAPTCHA = By.name("_registercomplaint_WAR_colportalcomplaintosiptelportlet_captcha");
     public static By BTN_COMENCEMOS = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_btnConsult\"]");
     public static By BTN_NO = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_frmFacturation\"]/div/div/div[2]/div[2]/div/div[2]/div/button");
-    public static By BTN_PENALIDAD = By.xpath("//*[@id=\"divGround\"]/label[1]");
+
+
     public static By BTN_CONTINUAR = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_btnConsult\"]");
     public static By LST_MES = By.xpath("//*[@id=\"divMonth\"]/div/input");
     public static By LST_M = By.xpath("//*[@id=\"divMonth\"]/div/ul/li[2]");
@@ -45,14 +46,22 @@ public class PageObject_Reclamo_Movil {
     public static By BTN_ADJUNTA = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/div/div/div/div[1]");
     public static By TXT_DATOS = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_code\"]");
     public static By BTN_FECHA_EMI = By.xpath("//*[@id=\"divDateEmi\"]/label");
-    public static By BTN_FECHA_EMICION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+
+    //public static By BTN_FECHA_EMICION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+    public static By BTN_FECHA_EMICION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[3]/button[1]");
+
     public static By BTN_CERRAR = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[3]/button[3]");
     public static By BTN_FECHA_REC = By.xpath("//*[@id=\"divDateRec\"]/label");
-    public static By BTN_FECHA_RECEPCION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+
+    //public static By BTN_FECHA_RECEPCION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+    public static By BTN_FECHA_RECEPCION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[3]/button[1]");
+
     public static By BTN_CERRAR_RE = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[3]/button[3]");
 
 
     public static By RBN_QUEJAS = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RBN_QUEJAS2 = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By RBN_QUEJAS3 = By.xpath("//*[@id=\"divGround\"]/label[4]");
     public static By TXT_NUN_TELEFONO_CELULAR = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/div/div/input");
     public static By BTN_ARCHIVO= By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[2]/div/div/div/div[1]");
     public static By TXT_RAZ_QUEJAS = By.id("_registercomplaint_WAR_colportalcomplaintosiptelportlet_reasons");
@@ -179,11 +188,67 @@ public class PageObject_Reclamo_Movil {
 
     public static By RBN_CALIDAD = By.xpath("//*[@id=\"divGround\"]/label[10]");
     public static By RBN_PROBRECEP  = By.xpath("//*[@id=\"divGround\"]/label[1]");
-    public static By TXT_COMENTARIO_ESPECIFICA_ERROR = By.xpath("//*[@id=\"divM_CUAL_ESPECIFICA_MENSAJE_ERROR\"]/label");
+    public static By TXT_COMENTARIO_ESPECIFICA_ERROR = By.xpath("//*[@id=\"M_CUAL_ESPECIFICA_MENSAJE_ERROR\"]");
 
+    public static By RBN_PROBSERV  = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By TXT_COMENTARIO_ESPECIFICA_PROBLEMA = By.xpath("//*[@id=\"M_CUAL_ESPECIFICA_PROBLEMA\"]");
+
+    public static By RBN_ROAMING  = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By TXT_COMENTARIO_ESPECIFICA_MENSAJE = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/label");
+
+    public static By RBN_MSJTEXTO  = By.xpath("//*[@id=\"divGround\"]/label[4]");
+    public static By RBN_RECIBIR_SMS = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RBN_ENVIAR_SMS = By.xpath("//*[@id=\"divGround\"]/label[2]");
+
+    public static By RBN_DATOSCEL  = By.xpath("//*[@id=\"divGround\"]/label[5]");
+    public static By RBN_DATOSBAM  = By.xpath("//*[@id=\"divGround\"]/label[6]");
+    public static By RBN_COBERTURA  = By.xpath("//*[@id=\"divGround\"]/label[7]");
+    public static By RBN_PAQUETE  = By.xpath("//*[@id=\"divGround\"]/label[8]");
+    public static By RBN_LLAM_NUMEROS_CORTOS  = By.xpath("//*[@id=\"divGround\"]/label[9]");
+    public static By RBN_CONSULTA_SALDO  = By.xpath("//*[@id=\"divGround\"]/label[10]");
+    public static By RBN_AFIL_SMS_PREMIUM  = By.xpath("//*[@id=\"divGround\"]/label[11]");
+    public static By RBN_DESAFIL_SMS_PREMIUM  = By.xpath("//*[@id=\"divGround\"]/label[12]");
+    public static By RBN_AFIL_ESCUCHAME  = By.xpath("//*[@id=\"divGround\"]/label[13]");
+    public static By RBN_DESAFIL_ESCUCHAME  = By.xpath("//*[@id=\"divGround\"]/label[14]");
+    public static By RBN_CALIDAD_MPLAY  = By.xpath("//*[@id=\"divGround\"]/label[15]");
+    public static By RBN_USSD  = By.xpath("//*[@id=\"divGround\"]/label[16]");
+    public static By RBN_COMPRA_RECARGA_VIRTUAL  = By.xpath("//*[@id=\"divGround\"]/label[17]");
+
+    public static By RBN_CONTRATACION = By.xpath("//*[@id=\"divGround\"]/label[11]");
     public static By BTN_SI_P = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_frmFacturation\"]/div/div/div[2]/div[2]/div/div[1]/div/button");
+    // FLUJOS  PREPAGO
+    public static By RBN_PENALIDAD = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RBN_DESC_CONTRATO = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RBN_CAMB_TITULARIDAD = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By RBN_CAMB_EQUIPO = By.xpath("//*[@id=\"divGround\"]/label[4]");
+
+    public static By RBN_EQUIPO = By.xpath("//*[@id=\"divGround\"]/label[5]");
+    public static By RBN_EQUIPO_CUOTA = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RBN_EQUIPO_IMPORTE = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By TXT_IMPORTE_OFREC = By.id("M_CUAL_IMPORTE");
 
 
+    public static By RBN_SERV_ADIC = By.xpath("//*[@id=\"divGround\"]/label[6]");
+
+    public static By TXT_ESPEC_PLAN = By.id("M_CUAL_PLAN");
+
+    public static By RBN_RECONEXION = By.xpath("//*[@id=\"divGround\"]/label[7]");
+    public static By RBN_PREPAGO_ROAMING = By.xpath("//*[@id=\"divGround\"]/label[8]");
+
+    public static By RBN_CONS_ADIC = By.xpath("//*[@id=\"divGround\"]/label[9]");
+    public static By RBN_CONS_ADIC_VOZ = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RBN_CONS_ADIC_DATOS = By.xpath("//*[@id=\"divGround\"]/label[2]");
+
+    public static By RBN_PAQ_DATOS = By.xpath("//*[@id=\"divGround\"]/label[10]");
+
+    public static By RBN_PLAN_MENSUAL = By.xpath("//*[@id=\"divGround\"]/label[11]");
+    public static By RBN_EXCEDENTE = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RBN_PROMOCION = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RBN_BENEFICIOS = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By TXT_COMENTARIO_BENEFICIOS = By.id("M_CUAL_ESPECIFIQUE");
+
+    //SOLO OPCION 1
+    public static By RBN_OPCION1 = By.xpath("//*[@id=\"divGround\"]/label[1]");
 
 
 

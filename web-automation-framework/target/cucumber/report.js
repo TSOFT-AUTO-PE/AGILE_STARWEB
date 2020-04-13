@@ -1,518 +1,682 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("RegistroReclamo_Movil.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("RegistroReclamo_Hogar.feature");
 formatter.feature({
   "line": 1,
-  "name": "Registro Reclamo Modulo Movil",
+  "name": "Registro Reclamo Modulo Hogar",
   "description": "",
-  "id": "registro-reclamo-modulo-movil",
+  "id": "registro-reclamo-modulo-hogar",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 2204,
-  "name": "Registro Reclamo Movil Postago CALIDAD PROBLEMAS LLAMADAS",
+  "line": 2292,
+  "name": "Registro Reclamo Hogar Trío - Otros - Suspencion Baja - Baja",
   "description": "",
-  "id": "registro-reclamo-modulo-movil;registro-reclamo-movil-postago-calidad-problemas-llamadas",
+  "id": "registro-reclamo-modulo-hogar;registro-reclamo-hogar-trío---otros---suspencion-baja---baja",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 2203,
-      "name": "@Test_Movil_Postpago_CALIDAD_PROBLEMAS_LLAMADAS"
+      "line": 2291,
+      "name": "@Test_Hogar_Trio_Otros_Susp_Baja_Baja"
     }
   ]
 });
 formatter.step({
-  "line": 2206,
-  "name": "Ingreso a la URL RECLAMOS MOVIL \"\u003ccaso_prueba\u003e\"",
+  "line": 2294,
+  "name": "ingreso a la URL \"\u003ccaso_prueba\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 2207,
-  "name": "Selecciono la opcion MOVIL",
+  "line": 2295,
+  "name": "Selecciono la opción HOGAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2208,
-  "name": "Ingreso el NUMERO CELULAR P\"\u003ccaso_prueba\u003e\"",
+  "line": 2296,
+  "name": "Selecciono la opcion TRIO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2209,
-  "name": "Selecciono TIPO DE DOCUMENTO MOVIL",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2210,
-  "name": "Selecciono el Tipo de Documento DNI MOVIL",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2211,
-  "name": "Ingreso el NÚMERO DE DOCUMENTO MOVIL P\"\u003ccaso_prueba\u003e\"",
+  "line": 2297,
+  "name": "Ingreso el NÚMERO DE TELEFONO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2212,
-  "name": "Ingreso el NÚMERO DE CAPTCHA MOVIL\"\u003ccaso_prueba\u003e\"",
+  "line": 2298,
+  "name": "Selecciono TIPO DE DOCUMENTO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2299,
+  "name": "Selecciono el Tipo de Documento DNI",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2300,
+  "name": "Ingreso el NÚMERO DE DOCUMENTO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2213,
-  "name": "Selecciono la opción COMENCEMOS MOVIL",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2214,
-  "name": "Selecciono el boton NO",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2215,
-  "name": "Selecciono la opcion CALIDAD",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2216,
-  "name": "Selecciono la opción CONTINUAR",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2217,
-  "name": "Selecciono la opcion TENGO PROBLEMAS PARA REALIZAR Y RECIBIR LLAMADAS",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2218,
-  "name": "Selecciono la opción CONTINUAR",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2219,
-  "name": "Especifica el MENSAJE DE ERROR LUGAR HORA FECHA \"\u003ccaso_prueba\u003e\"",
+  "line": 2301,
+  "name": "Ingreso el NÚMERO DE CAPTCHA \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2220,
-  "name": "Selecciono la opción CONTINUAR",
+  "line": 2302,
+  "name": "Selecciono la opción COMENCEMOS",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2221,
-  "name": "Selecciono la opción MES RECIBO RECLAMO MOVIL",
+  "line": 2303,
+  "name": "Selecciono la opcion NO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2222,
-  "name": "Selecciono el MES MOVIL",
+  "line": 2304,
+  "name": "Selecciono la opción Suspensión / Baja Final",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2223,
-  "name": "Selecciono la opción ANIO RECIBO RECLAMO MOVIL",
+  "line": 2305,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2224,
-  "name": "Selecciono la ANIO MOVIL",
+  "line": 2306,
+  "name": "Selecciono la opción Solicite cortar mi servicio y sigue activo",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2225,
-  "name": "Selecciono la opción NÚMERO DE RECIBO MOVIL",
+  "line": 2307,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2226,
-  "name": "Ingreso el NÚMERO DE RECIBO MOVIL\"\u003ccaso_prueba\u003e\"",
+  "line": 2308,
+  "name": "Selecciono la opción MES RECIBO RECLAMO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2309,
+  "name": "Selecciono el MES",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2310,
+  "name": "Selecciono la opción ANIO RECIBO RECLAMO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2311,
+  "name": "Selecciono la ANIO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2312,
+  "name": "Selecciono la opción NÚMERO DE RECIBO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2313,
+  "name": "Ingreso el NÚMERO DE RECIBO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2227,
-  "name": "Selecciono la opción CONTINUAR",
+  "line": 2314,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2228,
-  "name": "Ingreso el COMENTARIO ADICIONAL MOVIL\"\u003ccaso_prueba\u003e\"",
+  "line": 2315,
+  "name": "Ingreso el COMENTARIO ADICIONAL \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2229,
-  "name": "Selecciono la opción CONTINUAR",
+  "line": 2316,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2230,
-  "name": "Ingreso el NOMBRE M \"\u003ccaso_prueba\u003e\"",
+  "line": 2317,
+  "name": "Ingreso el NOMBRE \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2231,
-  "name": "INgreso el APELLIDO M \"\u003ccaso_prueba\u003e\"",
+  "line": 2318,
+  "name": "INgreso el APELLIDO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2232,
-  "name": "Selecciono TIPO DE USUARIO M",
+  "line": 2319,
+  "name": "Selecciono TIPO DE USUARIO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2233,
-  "name": "Selecciono el USUARIO M",
+  "line": 2320,
+  "name": "Selecciono el USUARIO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2234,
-  "name": "Ingreso el NUMERO DE CONTACTO M \"\u003ccaso_prueba\u003e\"",
+  "line": 2321,
+  "name": "Ingreso el NUMERO DE CONTACTO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2235,
-  "name": "Ingreso el CORREO M \"\u003ccaso_prueba\u003e\"",
+  "line": 2322,
+  "name": "Ingreso el CORREO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2236,
-  "name": "Ingreso la CONFIRMACION DEL CORREO M \"\u003ccaso_prueba\u003e\"",
+  "line": 2323,
+  "name": "Ingreso la CONFIRMACION DEL CORREO \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2237,
-  "name": "Selecciono DEPARTAMENTO M",
+  "line": 2324,
+  "name": "Selecciono DEPARTAMENTO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2238,
-  "name": "Selecciono DEPARTAMENTO1 M",
+  "line": 2325,
+  "name": "Selecciono DEPARTAMENTO1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2239,
-  "name": "Selecciono PROVINCIA M",
+  "line": 2326,
+  "name": "Selecciono PROVINCIA",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2240,
-  "name": "Selecciono PROVINCIA1 M",
+  "line": 2327,
+  "name": "Selecciono PROVINCIA1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2241,
-  "name": "Selecciono DISTRITO M",
+  "line": 2328,
+  "name": "Selecciono DISTRITO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2242,
-  "name": "Selecciono DISTRITO1 M",
+  "line": 2329,
+  "name": "Selecciono DISTRITO1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2243,
-  "name": "Ingreso la DIRECCION M \"\u003ccaso_prueba\u003e\"",
+  "line": 2330,
+  "name": "Ingreso la DIRECCION \"\u003ccaso_prueba\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 2244,
-  "name": "Selecciono DEPARTAMENTOFINAL M",
+  "line": 2331,
+  "name": "Selecciono DEPARTAMENTOFINAL",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2245,
-  "name": "Selecciono DEPARTAMENTO FINAL1 M",
+  "line": 2332,
+  "name": "Selecciono DEPARTAMENTO FINAL1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2246,
-  "name": "Selecciono la opción ENVIAR M",
+  "line": 2333,
+  "name": "Selecciono la opción ENVIAR",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 2249,
+  "line": 2335,
   "name": "",
   "description": "",
-  "id": "registro-reclamo-modulo-movil;registro-reclamo-movil-postago-calidad-problemas-llamadas;",
+  "id": "registro-reclamo-modulo-hogar;registro-reclamo-hogar-trío---otros---suspencion-baja---baja;",
   "rows": [
     {
       "cells": [
         "caso_prueba"
       ],
-      "line": 2250,
-      "id": "registro-reclamo-modulo-movil;registro-reclamo-movil-postago-calidad-problemas-llamadas;;1"
+      "line": 2336,
+      "id": "registro-reclamo-modulo-hogar;registro-reclamo-hogar-trío---otros---suspencion-baja---baja;;1"
     },
     {
       "cells": [
         "1"
       ],
-      "line": 2251,
-      "id": "registro-reclamo-modulo-movil;registro-reclamo-movil-postago-calidad-problemas-llamadas;;2"
+      "line": 2337,
+      "id": "registro-reclamo-modulo-hogar;registro-reclamo-hogar-trío---otros---suspencion-baja---baja;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 12380743500,
+  "duration": 273796200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 175309900,
+  "duration": 10796561900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 2251,
-  "name": "Registro Reclamo Movil Postago CALIDAD PROBLEMAS LLAMADAS",
+  "line": 2337,
+  "name": "Registro Reclamo Hogar Trío - Otros - Suspencion Baja - Baja",
   "description": "",
-  "id": "registro-reclamo-modulo-movil;registro-reclamo-movil-postago-calidad-problemas-llamadas;;2",
+  "id": "registro-reclamo-modulo-hogar;registro-reclamo-hogar-trío---otros---suspencion-baja---baja;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 2203,
-      "name": "@Test_Movil_Postpago_CALIDAD_PROBLEMAS_LLAMADAS"
+      "line": 2291,
+      "name": "@Test_Hogar_Trio_Otros_Susp_Baja_Baja"
     }
   ]
 });
 formatter.step({
-  "line": 2206,
-  "name": "Ingreso a la URL RECLAMOS MOVIL \"1\"",
+  "line": 2294,
+  "name": "ingreso a la URL \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 2207,
-  "name": "Selecciono la opcion MOVIL",
+  "line": 2295,
+  "name": "Selecciono la opción HOGAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2208,
-  "name": "Ingreso el NUMERO CELULAR P\"1\"",
-  "matchedColumns": [
-    0
-  ],
+  "line": 2296,
+  "name": "Selecciono la opcion TRIO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2209,
-  "name": "Selecciono TIPO DE DOCUMENTO MOVIL",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2210,
-  "name": "Selecciono el Tipo de Documento DNI MOVIL",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2211,
-  "name": "Ingreso el NÚMERO DE DOCUMENTO MOVIL P\"1\"",
+  "line": 2297,
+  "name": "Ingreso el NÚMERO DE TELEFONO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2212,
-  "name": "Ingreso el NÚMERO DE CAPTCHA MOVIL\"1\"",
+  "line": 2298,
+  "name": "Selecciono TIPO DE DOCUMENTO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2299,
+  "name": "Selecciono el Tipo de Documento DNI",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2300,
+  "name": "Ingreso el NÚMERO DE DOCUMENTO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2213,
-  "name": "Selecciono la opción COMENCEMOS MOVIL",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2214,
-  "name": "Selecciono el boton NO",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2215,
-  "name": "Selecciono la opcion CALIDAD",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2216,
-  "name": "Selecciono la opción CONTINUAR",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2217,
-  "name": "Selecciono la opcion TENGO PROBLEMAS PARA REALIZAR Y RECIBIR LLAMADAS",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2218,
-  "name": "Selecciono la opción CONTINUAR",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 2219,
-  "name": "Especifica el MENSAJE DE ERROR LUGAR HORA FECHA \"1\"",
+  "line": 2301,
+  "name": "Ingreso el NÚMERO DE CAPTCHA \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2220,
-  "name": "Selecciono la opción CONTINUAR",
+  "line": 2302,
+  "name": "Selecciono la opción COMENCEMOS",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2221,
-  "name": "Selecciono la opción MES RECIBO RECLAMO MOVIL",
+  "line": 2303,
+  "name": "Selecciono la opcion NO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2222,
-  "name": "Selecciono el MES MOVIL",
+  "line": 2304,
+  "name": "Selecciono la opción Suspensión / Baja Final",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2223,
-  "name": "Selecciono la opción ANIO RECIBO RECLAMO MOVIL",
+  "line": 2305,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2224,
-  "name": "Selecciono la ANIO MOVIL",
+  "line": 2306,
+  "name": "Selecciono la opción Solicite cortar mi servicio y sigue activo",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2225,
-  "name": "Selecciono la opción NÚMERO DE RECIBO MOVIL",
+  "line": 2307,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2226,
-  "name": "Ingreso el NÚMERO DE RECIBO MOVIL\"1\"",
+  "line": 2308,
+  "name": "Selecciono la opción MES RECIBO RECLAMO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2309,
+  "name": "Selecciono el MES",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2310,
+  "name": "Selecciono la opción ANIO RECIBO RECLAMO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2311,
+  "name": "Selecciono la ANIO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2312,
+  "name": "Selecciono la opción NÚMERO DE RECIBO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 2313,
+  "name": "Ingreso el NÚMERO DE RECIBO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2227,
-  "name": "Selecciono la opción CONTINUAR",
+  "line": 2314,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2228,
-  "name": "Ingreso el COMENTARIO ADICIONAL MOVIL\"1\"",
+  "line": 2315,
+  "name": "Ingreso el COMENTARIO ADICIONAL \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2229,
-  "name": "Selecciono la opción CONTINUAR",
+  "line": 2316,
+  "name": "Selecciono la opcion CONTINUAR",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2230,
-  "name": "Ingreso el NOMBRE M \"1\"",
+  "line": 2317,
+  "name": "Ingreso el NOMBRE \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2231,
-  "name": "INgreso el APELLIDO M \"1\"",
+  "line": 2318,
+  "name": "INgreso el APELLIDO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2232,
-  "name": "Selecciono TIPO DE USUARIO M",
+  "line": 2319,
+  "name": "Selecciono TIPO DE USUARIO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2233,
-  "name": "Selecciono el USUARIO M",
+  "line": 2320,
+  "name": "Selecciono el USUARIO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2234,
-  "name": "Ingreso el NUMERO DE CONTACTO M \"1\"",
+  "line": 2321,
+  "name": "Ingreso el NUMERO DE CONTACTO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2235,
-  "name": "Ingreso el CORREO M \"1\"",
+  "line": 2322,
+  "name": "Ingreso el CORREO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2236,
-  "name": "Ingreso la CONFIRMACION DEL CORREO M \"1\"",
+  "line": 2323,
+  "name": "Ingreso la CONFIRMACION DEL CORREO \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2237,
-  "name": "Selecciono DEPARTAMENTO M",
+  "line": 2324,
+  "name": "Selecciono DEPARTAMENTO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2238,
-  "name": "Selecciono DEPARTAMENTO1 M",
+  "line": 2325,
+  "name": "Selecciono DEPARTAMENTO1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2239,
-  "name": "Selecciono PROVINCIA M",
+  "line": 2326,
+  "name": "Selecciono PROVINCIA",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2240,
-  "name": "Selecciono PROVINCIA1 M",
+  "line": 2327,
+  "name": "Selecciono PROVINCIA1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2241,
-  "name": "Selecciono DISTRITO M",
+  "line": 2328,
+  "name": "Selecciono DISTRITO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2242,
-  "name": "Selecciono DISTRITO1 M",
+  "line": 2329,
+  "name": "Selecciono DISTRITO1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2243,
-  "name": "Ingreso la DIRECCION M \"1\"",
+  "line": 2330,
+  "name": "Ingreso la DIRECCION \"1\"",
   "matchedColumns": [
     0
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 2244,
-  "name": "Selecciono DEPARTAMENTOFINAL M",
+  "line": 2331,
+  "name": "Selecciono DEPARTAMENTOFINAL",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2245,
-  "name": "Selecciono DEPARTAMENTO FINAL1 M",
+  "line": 2332,
+  "name": "Selecciono DEPARTAMENTO FINAL1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 2246,
-  "name": "Selecciono la opción ENVIAR M",
+  "line": 2333,
+  "name": "Selecciono la opción ENVIAR",
   "keyword": "And "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 18
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoALaURL(String)"
+});
+formatter.result({
+  "duration": 8847842700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónHOGAR()"
+});
+formatter.result({
+  "duration": 1633354100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpcionTRIO()"
+});
+formatter.result({
+  "duration": 1512467500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 31
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElNÚMERODETELEFONO(String)"
+});
+formatter.result({
+  "duration": 5976914200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoTIPODEDOCUMENTO()"
+});
+formatter.result({
+  "duration": 3786098700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoElTipoDeDocumentoDNI()"
+});
+formatter.result({
+  "duration": 756683200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 32
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElNÚMERODEDOCUMENTO(String)"
+});
+formatter.result({
+  "duration": 5934652600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 30
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElNÚMERODECAPTCHA(String)"
+});
+formatter.result({
+  "duration": 633488600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónCOMENCEMOS()"
+});
+formatter.result({
+  "duration": 1985787500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpcionNO()"
+});
+formatter.result({
+  "duration": 1371534800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónSuspensiónBajaFinal()"
+});
+formatter.result({
+  "duration": 801088600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpcionCONTINUAR()"
+});
+formatter.result({
+  "duration": 4646233100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónSoliciteCortarMiServicioYSigueActivo()"
+});
+formatter.result({
+  "duration": 646176700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpcionCONTINUAR()"
+});
+formatter.result({
+  "duration": 4854767600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónMESRECIBORECLAMO()"
+});
+formatter.result({
+  "duration": 3699547900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoElMES()"
+});
+formatter.result({
+  "duration": 3656867900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónANIORECIBORECLAMO()"
+});
+formatter.result({
+  "duration": 3632302000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaANIO()"
+});
+formatter.result({
+  "duration": 3700096500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónNÚMERODERECIBO()"
+});
+formatter.result({
+  "duration": 864050700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 29
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElNÚMERODERECIBO(String)"
+});
+formatter.result({
+  "duration": 732970900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpcionCONTINUAR()"
+});
+formatter.result({
+  "duration": 7200876500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -521,52 +685,200 @@ formatter.match({
       "offset": 33
     }
   ],
-  "location": "steps_registroReclamo_Movil.ingresoALaURLRECLAMOSMOVIL(String)"
+  "location": "steps_registroReclamo_Hogar.ingresoElCOMENTARIOADICIONAL(String)"
 });
 formatter.result({
-  "duration": 13707296300,
+  "duration": 918799700,
   "status": "passed"
 });
 formatter.match({
-  "location": "steps_registroReclamo_Movil.seleccionoLaOpcionMOVIL()"
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpcionCONTINUAR()"
 });
 formatter.result({
-  "duration": 4348132800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 28
-    }
-  ],
-  "location": "steps_registroReclamo_Movil.ingresoElNUMEROCELULARP(String)"
-});
-formatter.result({
-  "duration": 6410113500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "steps_registroReclamo_Movil.seleccionoTIPODEDOCUMENTOMOVIL()"
-});
-formatter.result({
-  "duration": 941102700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "steps_registroReclamo_Movil.seleccionoElTipoDeDocumentoDNIMOVIL()"
-});
-formatter.result({
-  "duration": 21103185200,
+  "duration": 6900023900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "1",
-      "offset": 39
+      "offset": 19
     }
   ],
-  "location": "steps_registroReclamo_Movil.ingresoElNÚMERODEDOCUMENTOMOVILP(String)"
+  "location": "steps_registroReclamo_Hogar.ingresoElNOMBRE(String)"
+});
+formatter.result({
+  "duration": 700267400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 21
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElAPELLIDO(String)"
+});
+formatter.result({
+  "duration": 3713627700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoTIPODEUSUARIO()"
+});
+formatter.result({
+  "duration": 3678757900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoElUSUARIO()"
+});
+formatter.result({
+  "duration": 3658858000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 31
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElNUMERODECONTACTO(String)"
+});
+formatter.result({
+  "duration": 799187500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 19
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoElCORREO(String)"
+});
+formatter.result({
+  "duration": 843296800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 36
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoLaCONFIRMACIONDELCORREO(String)"
+});
+formatter.result({
+  "duration": 3722549900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoDEPARTAMENTO()"
+});
+formatter.result({
+  "duration": 3628683700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 23
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.seleccionoDEPARTAMENTO(int)"
+});
+formatter.result({
+  "duration": 3666745000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoPROVINCIA()"
+});
+formatter.result({
+  "duration": 3674839700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 20
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.seleccionoPROVINCIA(int)"
+});
+formatter.result({
+  "duration": 3637016500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoDISTRITO()"
+});
+formatter.result({
+  "duration": 3635875800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 19
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.seleccionoDISTRITO(int)"
+});
+formatter.result({
+  "duration": 3613897400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 22
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.ingresoLaDIRECCION(String)"
+});
+formatter.result({
+  "duration": 3681461000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoDEPARTAMENTOFINAL()"
+});
+formatter.result({
+  "duration": 3665881400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 29
+    }
+  ],
+  "location": "steps_registroReclamo_Hogar.seleccionoDEPARTAMENTOFINAL(int)"
+});
+formatter.result({
+  "duration": 3687717200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "steps_registroReclamo_Hogar.seleccionoLaOpciónENVIAR()"
+});
+formatter.result({
+  "duration": 7318751600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1257183900,
+  "status": "passed"
+});
 });

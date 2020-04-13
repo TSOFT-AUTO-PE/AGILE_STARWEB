@@ -1811,7 +1811,7 @@ public class steps_registroReclamo_Hogar {
     @And("^Selecciono la opción Retencion$")
     public void seleccionoLaOpciónRetencion() throws Throwable{
         try {
-            driver.findElement(RDN_PROMOCION).click();
+            driver.findElement(RDN_RETENCION).click();
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la Opción Retención");
             generateWord.sendText("Se selecciona la Opción Retención");
             generateWord.addImageToWord(driver);
@@ -1823,4 +1823,147 @@ public class steps_registroReclamo_Hogar {
         }
     }
 
+    @And("^Selecciono la opción Condiciones Contractuales/Derechos Reconocidos Normativa/Reuso de Equipo en Baja$")
+    public void seleccionoLaOpciónCondicionesContractualesDerechosReconocidosNormativaReusoDeEquipoEnBaja() throws Throwable{
+        try {
+            driver.findElement(RDN_CONDCONTR).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la Opción Condiciones " +
+                    "Contractuales/Derechos Reconocidos Normativa/Reuso de Equipo en Baja");
+            generateWord.sendText("Se selecciona la Opción Condiciones Contractuales/Derechos Reconocidos " +
+                    "Normativa/Reuso de Equipo en Baja");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 23, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver,"Fallo caso de prueba : " + e.getMessage() );
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Instalacion o Reinstalación$")
+    public void seleccionoLaOpciónInstalacionOReinstalación() throws Throwable {
+        try {
+            driver.findElement(RDN_INST_REINS).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Instalacion o Reinstalación");
+            generateWord.sendText("Se selecciona la opción de Instalacion o Reinstalación");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Han pasado siete dias y aún no instalan mi servicio$")
+    public void seleccionoLaOpciónHanPasadoSieteDiasYAúnNoInstalanMiServicio() throws Throwable {
+        try {
+            driver.findElement(RDN_NO_INSTALAN).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Han pasado siete dias " +
+                    "y aún no instalan mi servicio");
+            generateWord.sendText("Se selecciona la opción de Han pasado siete dias y aún no instalan mi servicio");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Nueva Instalación$")
+    public void seleccionoLaOpciónNuevaInstalación() throws Throwable {
+        try {
+            driver.findElement(RDN_NUEVA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Nueva Instalación");
+            generateWord.sendText("Se selecciona la opción de Nueva Instalación");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+
+
+    @And("^Selecciono la opción Reinstalación$")
+    public void seleccionoLaOpciónReinstalación() throws Throwable {
+        try {
+            driver.findElement(RDN_REINSTALACION).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Reinstalación");
+            generateWord.sendText("Se selecciona la opción de Reinstalación");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Migracion$")
+    public void seleccionoLaOpciónMigracion() throws Throwable {
+        try {
+            driver.findElement(RDN_SI_MIGRACION).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Migración");
+            generateWord.sendText("Se selecciona la opción de Migración");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Suspensión / Baja Final$")
+    public void seleccionoLaOpciónSuspensiónBajaFinal() throws Throwable {
+        try {
+            driver.findElement(RDN_SUSP_BAJA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Suspensión / Baja Final");
+            generateWord.sendText("Se selecciona la opción de Suspensión / Baja Final");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+
+    }
+
+    @And("^Selecciono la opción Solicite suspender mi servicio y sigue activo$")
+    public void seleccionoLaOpciónSoliciteSuspenderMiServicioYSigueActivo() throws Throwable {
+        try {
+            driver.findElement(RDN_SUSPENDER).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Solicite suspender " +
+                    "mi servicio y sigue activo");
+            generateWord.sendText("Se selecciona la opción de Solicite suspender mi servicio y sigue activo");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Solicite cortar mi servicio y sigue activo$")
+    public void seleccionoLaOpciónSoliciteCortarMiServicioYSigueActivo() throws Throwable {
+        try {
+            driver.findElement(RDN_CORTE).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Solicite suspender " +
+                    "mi servicio y sigue activo");
+            generateWord.sendText("Se selecciona la opción de Solicite suspender mi servicio y sigue activo");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
 }
