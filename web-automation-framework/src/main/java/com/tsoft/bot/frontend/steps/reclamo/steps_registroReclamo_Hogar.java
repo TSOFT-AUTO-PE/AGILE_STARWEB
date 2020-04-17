@@ -987,30 +987,6 @@ public class steps_registroReclamo_Hogar {
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
             generateWord.sendText("Tiempo de espera ha excedido");
             generateWord.addImageToWord(driver);
-        }try {
-            int reclamo = Integer.parseInt(casoDePrueba) - 1;
-            String link1 = getData().get(reclamo).get(COLUMNA_ADJUNTA_RECIBO);
-            driver.findElement(BTN_ADJUNTA).click();
-            Thread.sleep(5000);
-            Robot robot = new Robot();
-            String text = link1;
-            StringSelection stringSelection = new StringSelection(text);
-            Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-            clipboard.setContents(stringSelection, stringSelection);
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_V);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            Thread.sleep(2000);
-            robot.keyPress(KeyEvent.VK_ENTER);
-            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona de Archivo");
-            generateWord.sendText("Se selecciona de Archivo");
-            generateWord.addImageToWord(driver);
-        }catch (Exception e) {
-            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 23, "FAIL");
-            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
-            generateWord.sendText("Tiempo de espera ha excedido");
-            generateWord.addImageToWord(driver);
         }
     }
 
@@ -1961,6 +1937,432 @@ public class steps_registroReclamo_Hogar {
             generateWord.addImageToWord(driver);
         }catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Portabilidad$")
+    public void seleccionoLaOpciónPortabilidad() throws Throwable {
+        try {
+            driver.findElement(RDN_PORTABILIDADP).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Portabilidad");
+            generateWord.sendText("Se selecciona la opción de Portabilidad");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción A Movistar$")
+    public void seleccionoLaOpciónAMovistar() throws Throwable {
+        try {
+            driver.findElement(RDN_PORTA_MOV).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de A Movistar");
+            generateWord.sendText("Se selecciona la opción de A Movistar");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Aun no terminan de portarme$")
+    public void seleccionoLaOpciónAunNoTerminanDePortarme() throws Throwable {
+        try {
+            driver.findElement(RDN_NO_TERMINA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Aun no terminan de portarme");
+            generateWord.sendText("Se selecciona la opción de Aun no terminan de portarme");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Me quedé sin servicio mas de tres horas$")
+    public void seleccionoLaOpciónMeQuedéSinServicioMasDeTresHoras() throws Throwable {
+        try {
+            driver.findElement(RDN_SIN_SERVICIO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Me quedé sin servicio mas de 03 horas");
+            generateWord.sendText("Se selecciona la opción de Me quedé sin servicio mas de 03 horas");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción No me permiten portarme$")
+    public void seleccionoLaOpciónNoMePermitenPortarme() throws Throwable {
+        try {
+            driver.findElement(RDN_NO_PERMITEN).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de No me permiten portarme");
+            generateWord.sendText("Se selecciona la opción de No me permiten portarme");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción A Otro Operador$")
+    public void seleccionoLaOpciónAOtroOperador() throws Throwable {
+        try {
+            driver.findElement(RDN_PORTA_OTRO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de A Otro Operador");
+            generateWord.sendText("Se selecciona la opción de A Otro Operador");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción No me permiten portarme Otro$")
+    public void seleccionoLaOpciónNoMePermitenPortarmeOtro() throws Throwable {
+        try {
+            driver.findElement(RDN_NO_PERMITEN_OTRO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de No me permiten portarme");
+            generateWord.sendText("Se selecciona la opción de No me permiten portarme");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción No solicite Portabilidad$")
+    public void seleccionoLaOpciónNoSolicitePortabilidad() throws Throwable {
+        try {
+            driver.findElement(RDN_PORTA_NOSOLIC).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de No solicite Portabilidad");
+            generateWord.sendText("Se selecciona la opción de No solicite Portabilidad");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Corte/Suspensión sin una razón justificada$")
+    public void seleccionoLaOpciónCorteSuspensiónSinUnaRazónJustificada() throws Throwable {
+        try {
+            driver.findElement(RDN_CORTE_SUSP_SIN_RAZON).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Corte/Suspensión " +
+                    "sin una razón justificada");
+            generateWord.sendText("Se selecciona la opción de Corte/Suspensión sin una razón justificada");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Suspension Temporal$")
+    public void seleccionoLaOpciónSuspensionTemporal() throws Throwable {
+        try {
+            driver.findElement(RDN_SUSP_TEMPORAL).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Suspension Temporal");
+            generateWord.sendText("Se selecciona la opción de Suspension Temporal");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Corte por deuda$")
+    public void seleccionoLaOpciónCortePorDeuda() throws Throwable {
+        try {
+            driver.findElement(RDN_CORTE_DEUDA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Corte por deuda");
+            generateWord.sendText("Se selecciona la opción de Corte por deuda");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Corte total de mi servicio$")
+    public void seleccionoLaOpciónCorteTotalDeMiServicio() throws Throwable {
+        try {
+            driver.findElement(RDN_CORTE_TOTAL).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Corte total de mi servicio");
+            generateWord.sendText("Se selecciona la opción de Corte total de mi servicio");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Traslado$")
+    public void seleccionoLaOpciónTraslado() throws Throwable {
+        try {
+            driver.findElement(RDN_OTROS_TRASLADO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Traslado");
+            generateWord.sendText("Se selecciona la opción de Traslado");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Han pasado quince dias y aún no instalan mi servicio$")
+    public void seleccionoLaOpciónHanPasadoQuinceDiasYAúnNoInstalanMiServicio() throws Throwable {
+        try {
+            driver.findElement(RDN_AUN_NO_INSTALAN).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Han pasado 15 dias " +
+                    "y aún no instalan mi servicio");
+            generateWord.sendText("Se selecciona la opción de Han pasado 15 dias y aún no instalan mi servicio");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Veracidad de la informacion$")
+    public void seleccionoLaOpciónVeracidadDeLaInformacion() throws Throwable {
+        try {
+            driver.findElement(RDN_VER_INFORMACION).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Veracidad de la informacion");
+            generateWord.sendText("Se selecciona la opción de Veracidad de la informacion");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Lugares de pago oficinas$")
+    public void seleccionoLaOpciónLugaresDePagoOficinas() throws Throwable {
+        try {
+            driver.findElement(RDN_LUGARES_PAGO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Lugares de Pago/Oficinas");
+            generateWord.sendText("Se selecciona la opción de Lugares de Pago/Oficinas");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Cambio de parrilla TV$")
+    public void seleccionoLaOpciónCambioDeParrillaTV() throws Throwable {
+        try {
+            driver.findElement(RDN_PARRILLA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Cambio de parrilla TV");
+            generateWord.sendText("Se selecciona la opción de Cambio de parrilla TV");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opción Tarjetas fisicas o virtuales$")
+    public void seleccionoLaOpciónTarjetasFisicasOVirtuales() throws Throwable {
+        try {
+            driver.findElement(RDN_TARJETAS_FISVIRT).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Tarjetas fisicas o virtuales");
+            generateWord.sendText("Se selecciona la opción de Tarjetas fisicas o virtuales");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Tengo inconveninetes con mi Tarjeta Hola Perú$")
+    public void seleccionoLaOpciónTengoInconveninetesConMiTarjetaHolaPerú() throws Throwable {
+        try {
+            driver.findElement(RDN_INCONVENIENTESTARJETA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Tengo inconveninetes " +
+                    "con mi Tarjeta 147 / Hola Perú");
+            generateWord.sendText("Se selecciona la opción de Tengo inconveninetes con mi Tarjeta 147 / " +
+                    "Hola Perú");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Tengo un Plan Fijo Movil y no puedo usarlo$")
+    public void seleccionoLaOpciónTengoUnPlanFijoMovilYNoPuedoUsarlo() throws Throwable {
+        try {
+            driver.findElement(RDN_PLAN_FIJO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Tengo un Plan " +
+                    "Fijo - Movil y no puedo usarlo");
+            generateWord.sendText("Se selecciona la opción de Tengo un Plan Fijo - Movil y no puedo usarlo");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción Tengo un Plan Multidestino y no puedo usarlo$")
+    public void seleccionoLaOpciónTengoUnPlanMultidestinoYNoPuedoUsarlo() throws Throwable {
+        try {
+            driver.findElement(RDN_PLAN_MULTIDESTINO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de Tengo un Plan " +
+                    "Multidestino y no puedo usarlo");
+            generateWord.sendText("Se selecciona la opción de Tengo un Plan Multidestino y no puedo usarlo");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción No puedo utilizar mi Credito de Minutos$")
+    public void seleccionoLaOpciónNoPuedoUtilizarMiCreditoDeMinutos() throws Throwable {
+        try {
+            driver.findElement(RDN_CREDITO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de No puedo utilizar mi" +
+                    " Credito de Minutos");
+            generateWord.sendText("Se selecciona la opción de No puedo utilizar mi Credito de Minutos");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+        
+    }
+
+    @And("^Selecciono la opción No puedo utilizar el Bono$")
+    public void seleccionoLaOpciónNoPuedoUtilizarElBono() throws Throwable {
+        try {
+            driver.findElement(RDN_BONO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opción de ");
+            generateWord.sendText("Se selecciona la opción de ");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 35, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opcion DUO$")
+    public void seleccionoLaOpcionDUO() throws Exception {
+        try {
+            driver.findElement(BTN_DUO).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se da clic al botón Dúo");
+            generateWord.sendText("Se da clic al botón Dúo");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 23, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+
+
+    @And("^Selecciono la opcion EN ALGUN CANAL, TE HAN NEGADO EL REGISTRO DE TU RECLAMO$")
+    public void seleccionoLaOpcionENALGUNCANALTEHANNEGADOELREGISTRODETURECLAMO() throws Exception {
+        try {
+            driver.findElement(RBN_QUEJAS_2).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opcion EN ALGUN CANAL, ¿TE HAN NEGADO EL REGISTRO DE TU RECLAMO?");
+            generateWord.sendText("Se selecciona la opcion EN ALGUN CANAL, ¿TE HAN NEGADO EL REGISTRO DE TU RECLAMO?");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 23, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opcion ¿NO HEMOS CUMPLDO CON LA RESOLUCION DE TU RECLAMO\\?$")
+    public void seleccionoLaOpcionNOHEMOSCUMPLDOCONLARESOLUCIONDETURECLAMO() throws Exception {
+        try {
+            driver.findElement(RBN_QUEJAS_3).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opcion ¿NO HEMOS CUMPLDO CON LA RESOLUCION DE TU RECLAMO?");
+            generateWord.sendText("Se selecciona la opcion ¿NO HEMOS CUMPLDO CON LA RESOLUCION DE TU RECLAMO?");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 23, "FAIL");
+            ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
+            generateWord.sendText("Tiempo de espera ha excedido");
+            generateWord.addImageToWord(driver);
+        }
+    }
+
+    @And("^Selecciono la opcion Solo Linea$")
+    public void seleccionoLaOpcionSoloLinea() throws Exception {
+        try {
+            driver.findElement(BTN_SOLO_LINEA).click();
+            ExtentReportUtil.INSTANCE.stepPass(driver, "Se selecciona la opcion Solo Linea");
+            generateWord.sendText("Se selecciona la opcion Solo Linea");
+            generateWord.addImageToWord(driver);
+        }catch (Exception e) {
+            ExcelReader.writeCellValue(EXCEL_WEB, RECLAMO_WEB, 1, 23, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
             generateWord.sendText("Tiempo de espera ha excedido");
             generateWord.addImageToWord(driver);

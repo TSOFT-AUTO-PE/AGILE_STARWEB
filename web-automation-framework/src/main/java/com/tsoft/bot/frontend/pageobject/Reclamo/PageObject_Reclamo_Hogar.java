@@ -8,6 +8,9 @@ public class PageObject_Reclamo_Hogar {
 
     public static By BTN_HOGAR = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_frmPrincipal\"]/div/div/div/div/div[1]/a");
     public static By BTN_TRIO = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_frmSecondary\"]/div/div/div[2]/div/div[1]/a");
+    public static By BTN_DUO = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_frmSecondary\"]/div/div/div[2]/div/div[2]/a");
+    public static By BTN_SOLO_LINEA = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_frmSecondary\"]/div/div/div[2]/div/div[3]/a");
+
     public static By TXT_NUM = By.name("_registercomplaint_WAR_colportalcomplaintosiptelportlet_nroPhone");
     public static By CHK_TDOC = By.xpath("//*[@id=\"divTypeDocument\"]/div");
     public static By CHK_DNI = By.xpath("//*[@id=\"divTypeDocument\"]/div/ul/li[2]");
@@ -84,6 +87,35 @@ public class PageObject_Reclamo_Hogar {
     public static By RDN_SUSPENDER = By.xpath("//*[@id=\"divGround\"]/label[1]");
     public static By RDN_CORTE = By.xpath("//*[@id=\"divGround\"]/label[2]");
 
+    public static By RDN_PORTABILIDADP = By.xpath("//*[@id=\"divGround\"]/label[7]");
+    public static By RDN_PORTA_MOV = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_NO_TERMINA = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_SIN_SERVICIO = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RDN_NO_PERMITEN = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By RDN_PORTA_OTRO = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RDN_NO_PERMITEN_OTRO = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_PORTA_NOSOLIC= By.xpath("//*[@id=\"divGround\"]/label[3]");
+
+    public static By RDN_CORTE_SUSP_SIN_RAZON = By.xpath("//*[@id=\"divGround\"]/label[8]");
+    public static By RDN_SUSP_TEMPORAL = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_CORTE_DEUDA= By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RDN_CORTE_TOTAL = By.xpath("//*[@id=\"divGround\"]/label[3]");
+
+    public static By RDN_OTROS_TRASLADO = By.xpath("//*[@id=\"divGround\"]/label[9]");
+    public static By RDN_AUN_NO_INSTALAN = By.xpath("//*[@id=\"divGround\"]/label[1]");
+
+    public static By RDN_VER_INFORMACION = By.xpath("//*[@id=\"divGround\"]/label[10]");
+    public static By RDN_LUGARES_PAGO = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_PARRILLA = By.xpath("//*[@id=\"divGround\"]/label[2]");
+
+    public static By RDN_TARJETAS_FISVIRT = By.xpath("//*[@id=\"divGround\"]/label[11]");
+    public static By RDN_INCONVENIENTESTARJETA = By.xpath("//*[@id=\"divGround\"]/label[1]");
+    public static By RDN_PLAN_FIJO = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RDN_PLAN_MULTIDESTINO = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By RDN_CREDITO = By.xpath("//*[@id=\"divGround\"]/label[4]");
+    public static By RDN_BONO = By.xpath("//*[@id=\"divGround\"]/label[5]");
+
+
     public static By RDN_Solicite  = By.xpath("//*[@id=\"divGround\"]/label[2]");
     public static By TXT_MONTO_OFRECIDO = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/input");
    // public static By BTN_CONTINUAR_MONTO = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[2]/input");
@@ -137,14 +169,18 @@ public class PageObject_Reclamo_Hogar {
     public static By TXT_DATOS = By.xpath("//*[@id=\"_registercomplaint_WAR_colportalcomplaintosiptelportlet_code\"]");
     public static By BTN_ADJUNTA = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/div/div/div/div[1]");
     public static By BTN_FECHA_EMI = By.xpath("//*[@id=\"divDateEmi\"]/label");
-    public static By BTN_FECHA_EMICION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+    public static By BTN_FECHA_EMICION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[3]/button[1]");
+            //("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+
     public static By BTN_CERRAR = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[1]/div/div/div/div/div/div/div[3]/button[3]");
     public static By BTN_FECHA_REC = By.xpath("//*[@id=\"divDateRec\"]/label");
-    public static By BTN_FECHA_RECEPCION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td[1]/div");
+    public static By BTN_FECHA_RECEPCION = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[3]/button[1]");
     public static By BTN_CERRAR_RE = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[3]/div[2]/div/div/div/div/div/div/div[3]/button[3]");
 
 
     public static By RBN_QUEJAS = By.xpath("//*[@id=\"divGround\"]/label[2]");
+    public static By RBN_QUEJAS_2 = By.xpath("//*[@id=\"divGround\"]/label[3]");
+    public static By RBN_QUEJAS_3 = By.xpath("//*[@id=\"divGround\"]/label[4]");
     public static By TXT_NUN_TELEFONO_CELULAR = By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[1]/div/div/input");
     public static By TXT_RAZ_QUEJAS = By.id("_registercomplaint_WAR_colportalcomplaintosiptelportlet_reasons");
     public static By BTN_ARCHIVO= By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/form/div/div/div[2]/div/div[2]/div/div/div/div[1]");

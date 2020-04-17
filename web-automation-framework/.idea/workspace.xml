@@ -188,7 +188,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/steps/reclamo/steps_registroReclamo_Hogar.java</url>
-          <line>1036</line>
+          <line>1012</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
