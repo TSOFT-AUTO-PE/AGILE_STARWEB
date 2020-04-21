@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 		features={"src//main//resources//features"},
 		glue={"com.tsoft.bot.frontend.steps.reclamo","com.tsoft.bot.frontend.helpers"},
 		plugin = {"pretty", "html:target/cucumber"},
-		tags = {" @Test_Hogar_SoloLinea_Queja_Resolucion"},
+		tags = {" @Test_Hogar_SoloLinea_Facturacion_FactLlamadas_CostoLlamada"},
 		monochrome = true
 	)
 
