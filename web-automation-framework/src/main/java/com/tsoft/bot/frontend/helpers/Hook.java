@@ -39,7 +39,8 @@ public class Hook extends Listener {
 		System.setProperty("webdriver.chrome.driver", FileHelper.getProjectFolder() + CHROME_DRIVER);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
 		generateWord.startUpWord();
 	}
 	

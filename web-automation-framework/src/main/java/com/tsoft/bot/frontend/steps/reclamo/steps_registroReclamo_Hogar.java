@@ -2368,4 +2368,6 @@ public class steps_registroReclamo_Hogar {
             generateWord.addImageToWord(driver);
         }
     }
+
+
 }

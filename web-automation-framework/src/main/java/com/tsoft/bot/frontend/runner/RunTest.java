@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 @CucumberOptions(
 		features={"src//main//resources//features"},
-		glue={"com.tsoft.bot.frontend.steps.reclamo","com.tsoft.bot.frontend.helpers"},
+		glue={"com.tsoft.bot.frontend.steps.consultaLineas","com.tsoft.bot.frontend.steps.reporteria","com.tsoft.bot.frontend.helpers"},
 		plugin = {"pretty", "html:target/cucumber"},
-		tags = {" @Test_Hogar_SoloLinea_Facturacion_FactLlamadas_CostoLlamada"},
+		tags = {" @ConsultaReporteriaReglasActivas"},
 		monochrome = true
 	)
 

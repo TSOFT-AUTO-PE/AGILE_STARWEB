@@ -53,14 +53,14 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.RunTest">
-    <configuration name="Feature: RegistroReclamo" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: MyFlight_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/RegistroReclamo.feature" />
-      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.reclamo" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MyFlight_Login.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.myflight" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="web-automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: RegistroReclamo" />
+      <option name="SUGGESTED_NAME" value="Feature: MyFlight_Login" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -89,14 +89,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: RegistroReclamo_Movil" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: RegistroReclamo_TvInternet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/RegistroReclamo_Movil.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/RegistroReclamo_TvInternet.feature" />
       <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.reclamo" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="web-automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: RegistroReclamo_Movil" />
+      <option name="SUGGESTED_NAME" value="Feature: RegistroReclamo_TvInternet" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -107,14 +107,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: RegistroReclamo_TvInternet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: consultaLineas" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/RegistroReclamo_TvInternet.feature" />
-      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.reclamo" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/consultaLineas.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.consultaLineas" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="web-automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: RegistroReclamo_TvInternet" />
+      <option name="SUGGESTED_NAME" value="Feature: consultaLineas" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -145,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RunTest" />
-        <item itemvalue="Cucumber java.Feature: RegistroReclamo_TvInternet" />
-        <item itemvalue="Cucumber java.Feature: RegistroReclamo_Movil" />
+        <item itemvalue="Cucumber java.Feature: consultaLineas" />
         <item itemvalue="Cucumber java.Feature: RegistroReclamo_Hogar" />
-        <item itemvalue="Cucumber java.Feature: RegistroReclamo" />
+        <item itemvalue="Cucumber java.Feature: MyFlight_Login" />
+        <item itemvalue="Cucumber java.Feature: RegistroReclamo_TvInternet" />
       </list>
     </recent_temporary>
   </component>
